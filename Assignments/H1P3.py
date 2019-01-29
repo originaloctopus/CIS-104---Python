@@ -48,9 +48,8 @@ if oneDollars==1:
 else:
     print ("You have ",oneDollars," dollars.")
 
-print("The value of all your coin is $")
-totalMonies=input (penniesVal+nickelsVal+dimesVal+quartersVal+halfDollarsVal+oneDollarsVal)
-print(totalMonies)
-#totalMonies=Decimal()
-#totalMonies.quantize(Decimal(0.01))
-#print("The total of all your monies is:",totalMonies)
+totalMonies=Decimal()
+totalMonies.quantize(Decimal(0.01))
+totalMonies=float(penniesVal+nickelsVal+dimesVal+quartersVal+halfDollarsVal+oneDollarsVal)    
+
+print("The total of all your monies is: $",totalMonies)
