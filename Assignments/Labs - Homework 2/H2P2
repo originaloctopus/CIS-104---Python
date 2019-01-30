@@ -1,0 +1,16 @@
+book_title=str(input("Enter a book title: "))
+author_name=str(input("Enter the author's name: "))
+publish_year=int(input("Enter the year of publishing: "))
+page_total=int(input("Please enter the book's total pages: "))
+book_Age=2019-publish_year
+if book_Age < 10:
+    print("This book is younger than ten years old.")
+else:
+    print ("This book is younger than ten years old.")
+
+if page_total < 100:
+    print("This book is a short book.")    
+elif 100 >= page_total <= 300:
+    print ("This book is an average length.")
+else:
+    print("This book is a long book.")
