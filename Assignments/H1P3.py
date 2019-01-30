@@ -1,10 +1,3 @@
-#
-#HH: get_shortened_integer(2300) returns: 2.3k
-#HH: get_shortened_integer(1300000) returns: 1.3M
-#Questions:
-#what is a Bitwise Operation
-#unexpected EOF while parsing
-
 from decimal import *
 pennies=int(input(print("How many pennies do you have?")))
 penniesVal=float(pennies*.01)
