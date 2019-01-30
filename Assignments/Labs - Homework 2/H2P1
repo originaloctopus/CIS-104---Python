@@ -1,0 +1,7 @@
+age=int(input("Enter your age, please: "))
+ageTen=age+10
+print("In ten years, you will be " + str(ageTen) + ".")
+
+tempF=float(input("Enter the current temperature in Fahrenheit "))
+tempC=((tempF-32)*(5/9))
+print(str(tempC) + " degrees Celsius.")
