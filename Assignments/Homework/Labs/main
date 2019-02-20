@@ -1,0 +1,47 @@
+import Calculator
+import time
+
+print ("This is a calculator.")
+val1 = float(input("Enter your first number: "))
+userInput = str(input("Enter the operator (+, -, /, *, ^) or select a function: Memory Clear (c), invert number's sign (i), store value in memory (s), recall value stored in memory (r).  "))
+
+#similar to a do-while loop from c++
+while boo = true:
+ 
+ if userInput in Calculator.operatorList:
+  val2 = float (input("Enter your second number: "))
+
+  if userInput == '+':
+    answer = Calculator.add(val1, val2, userInput)
+    print(answer)
+    
+  if userInput == '*':
+    answer = Calculator.multiply(val1, val2, userInput)
+    print(answer)
+
+  if userInput == '-':   
+    answer = Calculator.subtract(val1, val2, userInput)
+    print(answer)
+
+  if userInput == '/':
+    answer = Calculator.divide(val1, val2, userInput)
+    print(answer)
+
+  if userInput == '^':
+    answer = Calculator.power(val1, val2, userInput)
+    print(answer)
+  
+ elif userInput in Calculator.keyPressList:
+    if userInput == 'i' or userInput == 'I':
+        answerFunc = Calculator.invert(val1)
+        print(answerFunc)
+    if userInput == 's' or userInput == 'S':
+        answerFunc = Calculator.memStore
+    if userInput == 'r' or userInput == 'R':
+        answerFunc = Calculator.memRecall
+    if userInput == 'c' or userInput == 'C':
+        answerFunc = Calculator.memClear
+    if userInput == 'x' or userInput == 'X':
+        print("Peace, yo.")
+
+    
